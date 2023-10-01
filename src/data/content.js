@@ -1,7 +1,7 @@
 let contentItem=[
     {
         id:1,
-        image:"",
+        image:"https://www.pngall.com/wp-content/uploads/4/Pepperoni-Dominos-Pizza-PNG-Free-Download.png",
         itemName:"Pizza",
         priceSl:600,
         priceMd:900,
@@ -31,6 +31,7 @@ let contentItem=[
         priceMd:900,
         priceLg:1200
     },
+    
     {
         id:5,
         image:"",
