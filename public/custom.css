@@ -477,6 +477,33 @@ input[type=radio] {
     align-items: flex-end;
     margin: 5px;
 }
+
+/* 
+.card-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.arrow-animation {
+    width: 128px;
+    position: absolute;
+    top: 0;
+    right: -41px;
+    transform: translateY(-100%);
+}
+
+
+.vertical-line {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: 50%;
+    right: -61px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    white-space: nowrap;
+} */
 .t{
-    color:rgb(99, 94, 94);
+    color:gray;
 }
