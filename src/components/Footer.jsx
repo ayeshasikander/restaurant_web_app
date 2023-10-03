@@ -26,7 +26,7 @@ const Footer = () => {
                 <AiFillTwitterCircle style={{ color: "#ad4907", margin: "3px", height: "30px", width: "35px" }} />
                 <AiFillLinkedin style={{ color: "#ad4907", margin: "3px", height: "30px", width: "35px" }} />
               </div>
-              <p className="text-light m-2">Amaryllis &copy; 2023</p>
+              <span className="m-2"style={{color:"rgb(99, 94, 94)",fontFamily:"sans-serif",fontSize:"13px"}}>Amaryllis &copy; 2023</span>
             </div>
           </Col>
 

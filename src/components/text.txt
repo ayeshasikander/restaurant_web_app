@@ -74,3 +74,114 @@ font-family: 'Merriweather', serif;
 font-family: 'Noto Sans Old Italic', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
+
+
+.card1 {
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid blue;
+    box-shadow: 0 4px 6px rgba(241, 232, 232, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(216, 156, 156, 0.2);
+}
+
+.content1 {
+    width: 250px;
+}
+
+.menu-img {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 150px;
+    /* Adjust the size as needed */
+    height: 150px;
+    /* Adjust the size as needed */
+    object-fit: cover;
+
+}
+
+.menu-content {
+    text-align: center;
+    padding: 10px;
+}
+
+.btn1 {
+    background-color: transparent;
+    color: #ad4907;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn1:hover {
+    background-color: #ad4907;
+    color: #000000;
+}
+
+.btn-group {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+import React, { useState } from 'react'
+import Card from './Card'
+import { Container, Row } from 'react-bootstrap'
+import Category from './Category'
+const Menu = () => {
+
+    const [selectedCategory,setSelectedCategory]=useState(null);
+    const handleCategorySelect=(category)=>{
+        setSelectedCategory(category);
+    };
+
+    const filteredContentItems = selectedCategory
+    ? contentItem.filter(item => item.category === selectedCategory)
+    : contentItem;
+
+    return (
+        <section className='menu bgbody' id='menus'>
+            <Container>
+                <Row>
+                    <h1 style={{ textAlign: "center", marginTop: "60px", marginBottom: "5px", color: "#ad4907", fontSize: "60px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif" }}>Our Menu Pack</h1>
+                    <Category onSelectedCategory={handleCategorySelect} />
+                    <h3 style={{ fontSize: "30px", textAlign: "center", color: "#ad4907", fontFamily: "'Roboto', sans-serif", fontWeight: "bold", marginTop: "50px", marginBottom: "50px" }}>Zabik Special Deals</h3>
+                    <Card contentItem={filteredContentItems}></Card>
+                </Row>
+            </Container>
+        </section>
+    )
+}
+
+export default Menu
+
+
+import React from 'react'
+
+const Button = ({ text }) => {
+    return (
+        <div className="c-button2 c-button2--gooey" >{text}
+            <div className="c-button__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    )
+}
+
+export default Button

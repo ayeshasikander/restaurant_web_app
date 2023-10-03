@@ -223,27 +223,6 @@
     width: 100%;
 }
 
-.row1 {
-    --bs-gutter-x: -0.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.mainrow {
-    margin: 50px;
-}
-
-/* .mini1 {
-    margin: 10px 5px 5px 10px;
-} */
-
-/* @media (min-width: 576px) {
-    .box {
-        flex: 0 0 auto;
-        width: 20%;
-    }
-} */
 
 /* ---------footer--------- */
 
@@ -410,63 +389,94 @@
     background-color: #27408b;
 }
 
+
+/* Card container style */
 .card1 {
-    align-items: center;
-    text-align: center;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 2px solid blue;
-    box-shadow: 0 4px 6px rgba(241, 232, 232, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin: 10px;
-    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .card1:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(216, 156, 156, 0.2);
 }
 
 .content1 {
-    width: 250px;
+    border: 1px solid #ad4907;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(5, 2, 0) 10%, rgb(0, 0, 0) 100%);
+    padding: 15px;
+    text-align: center;
 }
 
 .menu-img {
-    text-align: center;
-    padding: 20px;
+    margin-bottom: 20px;
+}
 
+
+.menu-img svg {
+    display: block;
+    margin: 0 auto;
 }
 
 .circle-image {
     border-radius: 50%;
-    width: 150px;
-    /* Adjust the size as needed */
-    height: 150px;
-    /* Adjust the size as needed */
     object-fit: cover;
 
 }
 
-.menu-content {
-    text-align: center;
-    padding: 10px;
+.menu-content h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+/* Button style */
 .btn1 {
-    background-color: transparent;
-    color: #ad4907;
-    padding: 6px 10px;
+    background-color: #522406;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    margin: 5px;
     cursor: pointer;
-    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .btn1:hover {
-    background-color: #ad4907;
+    background-color: #844b0f;
     color: #000000;
 }
 
-.btn-group {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
+
+.tooltip {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+
+/* rating stars */
+
+.rating-star {
+    cursor: pointer;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.star {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5px;
+}
+.t{
+    color:rgb(99, 94, 94);
 }
