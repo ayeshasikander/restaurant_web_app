@@ -2,7 +2,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
 import Menu from './components/Menu';
-import Deals from './components/Deals';
+import Dealslider from './components/Dealslider';
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Main />
       <Menu />
-      <Deals />
+      <Dealslider/>
       <Footer />
     </div>
   );

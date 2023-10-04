@@ -185,3 +185,43 @@ const Button = ({ text }) => {
 }
 
 export default Button
+
+
+import React from 'react'
+import { Container, Row } from 'react-bootstrap';
+import specialDeal from '../data/deal';
+import Deals from './Deals';
+// import { Swiper, SwiperSlide } from "swiper";
+
+// import 'swiper/css';
+// import 'swiper/css/effect-coverflow';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+
+
+const Dealslider = (props) => {
+
+    return (
+        <section className='plater bgbody' id='platers'>
+            <Container>
+                <Row>
+                    <h1 style={{ textAlign: "center", marginTop: "60px", marginBottom: "5px", color: "#ad4907", fontSize: "60px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif" }}>
+                        Dine Delights Specials</h1>
+                    <hr style={{ height: "9px", width: "100%", color: "gray", marginTop: "5px" }}></hr>
+                    
+                        {specialDeal.map((deal) => (
+                            
+                                <Deals key={deal.id} deal={deal} />
+                           
+                        ))}
+                    
+                </Row>
+
+            </Container>
+        </section>
+    )
+}
+
+export default Dealslider
+

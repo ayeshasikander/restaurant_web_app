@@ -504,6 +504,25 @@ input[type=radio] {
     transform: translate(-50%, -50%) rotate(-90deg);
     white-space: nowrap;
 } */
-.t{
-    color:gray;
+
+.cards {
+    border: 1px solid #ad4907;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(5, 2, 0) 10%, rgb(0, 0, 0) 100%);
+    padding: 15px;
+    text-align: center;
+    height: 500px;
 }
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
