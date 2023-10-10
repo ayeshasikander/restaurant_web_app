@@ -1,11 +1,13 @@
 import React from 'react'
 import Label from './Label'
+import logo from '../assests/logo-2.png'
+
 const Header = () => {
     return (
 
         <nav className="navbar1 navbar navbar-expand-lg" aria-label="Offcanvas navbar large" style={{position:"fixed",top:"0",zIndex:"100",width:"100%"}}>
             <div className="container-fluid">
-                <a className="navbar-brand text-light" href="/">Zabik</a>
+                <a className="navbar-brand text-light" href="/"><img className='logo' src={logo} alt="ZABIK" style={{width:"78px", height:"38px",marginLeft:"15px"}}/></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -20,7 +22,7 @@ const Header = () => {
                                 <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Home" fontSize="20px"/></a>
                             </li>
                             <li className="link">
-                                <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="About Us" fontSize="20px"/></a>
+                                <a className="text-light nav-link active" aria-current="page" href="/about" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="About Us" fontSize="20px"/></a>
                             </li>
                             <li className="link">
                                 <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Services" fontSize="20px"/></a>

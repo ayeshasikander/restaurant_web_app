@@ -493,17 +493,53 @@ input[type=radio] {
     right: -41px;
     transform: translateY(-100%);
 }
+*/
 
+/* .main .content .vertical-line {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    style={{ transform: 'rotate(-270deg)', transformOrigin: 'center bottom', marginTop:'10px' }}
+}  */
 
-.vertical-line {
+.special-deal {
+    transform: rotate(-270deg);
+    transform-origin: center bottom;
+    margin-top: 10px;
     position: absolute;
-    color: white;
-    font-size: 25px;
-    top: 50%;
-    right: -61px;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    white-space: nowrap;
-} */
+    bottom: 120px;
+    right: -30px;
+    color: #ad4907;
+}
+
+.special-deal::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    height: 3px;
+    width: 0%;
+    background-color: #ad4907;
+    animation: expand 1s infinite;
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+.animation {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
 
 .cards {
     border: 1px solid #ad4907;
@@ -512,6 +548,8 @@ input[type=radio] {
     padding: 15px;
     text-align: center;
     height: 500px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 
@@ -526,3 +564,7 @@ input[type=radio] {
     background-size: cover;
 }
 
+@media (max-width:786px){
+
+    
+}

@@ -1,8 +1,13 @@
 import React from 'react';
 import pizza from "../assests/pizza.mp4";
+import Lottie  from 'lottie-react';
+import animationData from '../assests/arrow.json';
+import {BsFillArrowRightCircleFill} from 'react-icons/bs'
+import { useState } from 'react';
 import Modal from './Modal';
+
 const Main = () => {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
   return (
     <section className='main'>
       <div className="overlay"></div>
@@ -22,7 +27,7 @@ const Main = () => {
             show={modalShow}
             onHide={() => setModalShow(false)}
           />
-          
+
           <a href='#menus' className="c-button c-button--gooey" id='menu-items' style={{ fontFamily: "'Roboto', sans-serif" }}> View Menu
             <div className="c-button__blobs">
               <div></div>
@@ -32,7 +37,12 @@ const Main = () => {
           </a>
 
         </div>
+        <div className='vertical-line'>
+          <h5 className='special-deal'> for special deals <a href="#platers"> <BsFillArrowRightCircleFill style={{color:"#ad4907"}}/></a></h5>
+          <Lottie className='animation' animationData={animationData} />
+        </div>
       </div>
+
     </section>
   );
 }

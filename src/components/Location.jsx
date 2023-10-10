@@ -1,15 +1,29 @@
-import React from 'react'
+import React from 'react';
 import { Container, Row } from 'react-bootstrap'
-const Location = () => {
+import GoogleMapReact from 'google-map-react';
+
+const Marker = ({ text }) => <div>{text}</div>
+
+const Location = ({ center, zoom }) => {
   return (
-    <section className='contact' id='contact'>
-      <Container>
-        <Row>
-          <h1>let's get the gps location using google map</h1>
-        </Row>
-      </Container>
-    </section>
-  )
+    <Container>
+      <Row>
+        <div style={{ height: "50vh", width: "50%" }}>
+          <GoogleMapReact bootstrapURLKeys={{ key: 'AIzaSyD7HOFihGRyhxlE5wsVK3UOfzp6dO-yLZg' }}
+            defaultCenter={center}
+            defaultZoom={zoom} >
+
+            <Marker lat={30.21972} lng={71.47111} text="My Location" />
+          </GoogleMapReact>
+        </div>
+      </Row>
+    </Container>
+  );
 }
 
-export default Location
+Location.defaultProps = {
+  center: { lat: 30.21, lng: 71.47 },
+  zoom: 11
+};
+
+export default Location;
