@@ -28,7 +28,7 @@ const Header = () => {
                                 <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Services" fontSize="20px"/></a>
                             </li>
                             <li className="link">
-                                <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Contact Us" fontSize="20px"/></a>
+                                <a className="text-light nav-link active" aria-current="page" href="/contact" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Contact Us" fontSize="20px"/></a>
                             </li>
                             <button style={{ fontFamily:"'Roboto', sans-serif" }}>Call Us: (+92)309 111 2276</button>
                         </ul>
