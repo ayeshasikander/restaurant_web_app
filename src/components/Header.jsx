@@ -19,10 +19,7 @@ const Header = () => {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="link">
-                                <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Home" fontSize="20px"/></a>
-                            </li>
-                            <li className="link">
-                                <a className="text-light nav-link active" aria-current="page" href="/about" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="About Us" fontSize="20px"/></a>
+                                <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Delicious" fontSize="20px"/></a>
                             </li>
                             <li className="link">
                                 <a className="text-light nav-link active" aria-current="page" href="/" style={{ fontFamily:"'Roboto', sans-serif" }}><Label text="Services" fontSize="20px"/></a>

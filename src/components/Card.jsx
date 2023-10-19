@@ -1,8 +1,9 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap';
 import 'react-tooltip/dist/react-tooltip.css';
-import { Tooltip } from 'react-tooltip'
+import { Tooltip } from 'react-tooltip';
 import Rating from './Rating';
+import { MdFavorite } from 'react-icons/md';
 
 
 export default function Card({ menuX }) {
@@ -14,7 +15,9 @@ export default function Card({ menuX }) {
           return (
             <Col xl={3} lg={4} md={6} sm={12} className='card1' key={id}>
               <div className='content1'>
-
+                <div id='favrite'>
+                  <MdFavorite id='fav'/>
+                </div>
                 <div className='menu-img'>
                   <svg className='circle-image' width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <image href={image} height="200px" width="200px" />

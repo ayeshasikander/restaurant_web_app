@@ -8,11 +8,16 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 import { Autoplay, Navigation, FreeMode,Pagination } from 'swiper/modules';
+// import Lottie from 'lottie-react';
+// import animationData from '../assests/Animation - 3.json';
 
 const Dealslider = (props) => {
 
     return (
         <section className='plater bgbody' id='platers'>
+            {/* <div id="slid">
+            <Lottie style={{ width: "100%", height: "100px" }} animationData={animationData}/>
+            </div> */}
             <Container>
                 <Row>
                     <h1 style={{ textAlign: "center", marginTop: "60px", marginBottom: "5px", color: "#ad4907", fontSize: "60px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif" }}>

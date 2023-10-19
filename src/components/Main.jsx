@@ -41,8 +41,9 @@ const Main = () => {
           <h5 className='special-deal'> for special deals <a href="#platers"> <BsFillArrowRightCircleFill style={{color:"#ad4907"}}/></a></h5>
           <Lottie className='animation' animationData={animationData} />
         </div>
+       
       </div>
-
+      
     </section>
   );
 }
