@@ -23,7 +23,7 @@ const Menu = () => {
         <section className='menu bgbody' id='menus'>
             <Container>
                 <Row>
-                    <h1 style={{ textAlign: "center", marginTop: "60px", marginBottom: "5px", color: "#ad4907", fontSize: "60px", fontWeight: "bold", fontFamily: "'Roboto', sans-serif" }}>Our Menu Pack</h1>
+                    <h1 id='head'>Our Menu Pack</h1>
                     <Category filterItem={filterItem} title={title} />
 
                     <h3 style={{ fontSize: "30px", textAlign: "center", color: "#ad4907", fontFamily: "'Roboto', sans-serif", fontWeight: "bold", marginTop: "50px", marginBottom: "50px" }}>Zabik Special Deals</h3>

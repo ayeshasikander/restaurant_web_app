@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import About from './components/About';
 import Contactus from './Contactus';
 import App from './App';
 import {
@@ -19,7 +18,6 @@ root.render(
     <Header />
     <Routes>
       <Route exact path='/' element={<App />} />
-      <Route exact path='/about' element={<About />} />
       <Route exact path='/contact' element={< Contactus/>} />
     </Routes>
     <Footer />
