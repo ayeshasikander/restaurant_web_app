@@ -94,7 +94,7 @@ let contentItem = [
     {
         id: 11,
         category: "Pizza",
-        image: "https://pngimg.com/d/pizza_PNG7105.png",
+        image: "https://e7.pngegg.com/pngimages/431/519/png-clipart-pizza-hut-sushi-pizza-delivery-pizza-thumbnail.png",
         itemName: "Extreme Pizza",
         priceSl: 480,
         priceMd: 900,
