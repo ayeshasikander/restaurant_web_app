@@ -5,10 +5,10 @@ const Order = () => {
         <div>
             <div data-tooltip="Thank you" className="button-2">
                 <div className="button2-wrapper">
-                    <div className="text">Buy Now</div>
-                    <span className="icon">
+                    <div className="text">Order Now</div>
+                    <a href="tel:+92 309 111 2276"> <span className="icon">
                         <AiOutlinePhone />
-                    </span>
+                    </span></a>
                 </div>
             </div>
 

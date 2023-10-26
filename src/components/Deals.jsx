@@ -18,13 +18,15 @@ export default function Deals({ deal }) {
         <div className='deal-order'>
           <div className="button-container">
             <button className="button">
-              <AiOutlinePhone id='icon'/>
+              <a href="tel:+92 309 111 2276">
+                <AiOutlinePhone id='icon' />
+              </a>
             </button>
             <button className="button">
               <strong id='price'>{deal.price}</strong>
             </button>
             <button className="button">
-              < AiOutlineShoppingCart id='icon'/>
+              < AiOutlineShoppingCart id='icon' />
             </button>
           </div>
         </div>

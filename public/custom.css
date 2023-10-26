@@ -553,6 +553,7 @@ input[type=radio] {
 #icon {
     height: 32px;
     width: 35px;
+    color: #fff;
 }
 
 #price {
@@ -565,6 +566,7 @@ input[type=radio] {
 
 .icon {
     font-size: 20px;
+
 }
 
 .swiper {
