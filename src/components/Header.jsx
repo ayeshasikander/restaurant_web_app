@@ -7,13 +7,13 @@ const Header = () => {
 
         <nav className="navbar1 navbar navbar-expand-lg" aria-label="Offcanvas navbar large" style={{ position: "fixed", top: "0", zIndex: "100", width: "100%" }}>
             <div className="container-fluid">
-                <a className="navbar-brand text-light" href="/"><img className='logo' src={logo} alt="ZABIK" style={{ width: "110px", height: "62px", marginLeft: "45px" }} /></a>
+                <a className="navbar-brand text-light" href="/"><img className='logo' src={logo} alt="ZABIK" style={{ width: "130px", height: "50px", marginLeft: "45px" }} /></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="navbar1 offcanvas offcanvas-end text-bg-light" tabIndex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                     <div className="offcanvas-header">
-                        <a className="navbar-brand text-light" href="/"><img className='logo' src={logo} alt="ZABIK" style={{ width: "110px", height: "62px", marginLeft: "45px" }} /></a>
+                        <a className="navbar-brand text-light" href="/"><img className='logo' src={logo} alt="ZABIK" style={{ width: "130px", height: "50px", marginLeft: "45px" }} /></a>
                         <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
