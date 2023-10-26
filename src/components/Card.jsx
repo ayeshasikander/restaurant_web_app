@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import 'react-tooltip/dist/react-tooltip.css';
 import { Tooltip } from 'react-tooltip';
 import Rating from './Rating';
+import Order from './Order';
 import { MdFavorite } from 'react-icons/md';
 
 
@@ -29,6 +30,7 @@ export default function Card({ menuX }) {
                   <h3>{itemName}</h3>
                 </div>
                 <div className='star'>
+                  <Order/>
                   <Rating />
                 </div>
                 <div className="btn-group" role="group" aria-label="Basic outlined example">

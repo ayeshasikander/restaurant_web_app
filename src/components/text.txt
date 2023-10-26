@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 import { Container, Row } from 'react-bootstrap';
 import Category from './Category';
 import Data from '../data/content';
 import Lottie from 'lottie-react';
 import animationData from '../assests/Animation - 3.json';
-
-const uniqueCategories = [...new Set(Data.map((item) => item.category))];
+const allSelections = ['All', ...new Set(Data.map((item) => item.category))];
 
 const Menu = () => {
     const [menuItem, setMenuItem] = useState(Data);
-    const [title] = useState(uniqueCategories); 
-    const defaultCategory='Pizza';
-
-    useEffect(()=>{
-        filterItem(defaultCategory);
-    },[])
+    const [title] = useState(allSelections);
 
     const filterItem = (category) => {
-        const filteredItems = Data.filter((item) => item.category === category);
-        setMenuItem(filteredItems);
+        if (category === 'All') {
+            return setMenuItem(Data);
+        }
+        const yCategory = Data.filter((item) => item.category === category)
+        return setMenuItem(yCategory);
     }
 
     return (
